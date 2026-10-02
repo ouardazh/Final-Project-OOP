@@ -28,7 +28,7 @@
     </header>
 
 
-     <!-- !This is a Main------ -->
+    <!-- !This is a Main------ -->
      <main>
         <!-- !This is the Hero Section----- -->
          <section class="hero">
@@ -86,25 +86,28 @@
          <!-- !This is th add Vehicle Section--- -->
           <section class="add-vehicle">
             <div class="container-form">
-              <form action="">
+              <form action="" id="vehicleForm">
               <label for="name">Vehicle name</label> <br>
-              <input type="text" placeholder="e.g Peugeot 208"> <br> <br>
+              <input type="text" placeholder="e.g Peugeot 208" id="nameVehicle"> <br> <br>
 
               <label for="">Vehicle type</label> <br>
-              <select name="" id="">
+              <select name="" id="vehicleType">
                 <option value="">Car</option>
                 <option value="">Motorcycle</option>
                 <option value="">Bicycle</option>
               </select> <br><br>
 
               <label for="">Daily rental price</label> <br>
-              <input type="number"> <br><br>
+              <input type="number" id="dailyPrice"> <br><br>
 
-              <button id="addBtn">✚ Add vehicle</button>
+              <button id="addBtn" type="submit">✚ Add vehicle</button>
+
+              <p id="error"></p>
             </form>
             </div>
 
-            <div>
+            <div id="result">
+    
 
             </div>
             <div>
@@ -114,7 +117,6 @@
           </section>
      </main>
 
-
- <script src="./script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
